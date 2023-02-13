@@ -30,4 +30,24 @@ fn main() {
     let o_name_trim : &str = others_name.trim(); // trim, removes whitespace
 
     println!("Welcome, {o_name_trim}... you are {o_age_int}");
+    
+    println!("I'll randomly count to 434343");
+
+    use std::{thread, time};
+    thread::sleep(time::Duration::from_secs(2));
+
+    let mut number :i128 = 0;
+    loop {
+        number = number + 1;
+        println!("{}",number);
+
+        if number == 434343 {
+            println!("Will end here :)");
+            break;
+        } else if number >= 343434 {
+            print!("I'm close to the end, ")
+        } else {
+            print!("still far away, ")
+        }
+    } 
 }
